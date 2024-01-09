@@ -1,0 +1,48 @@
+body {
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.avatar {
+    width: 150px;
+    border-radius: 90px;
+}
+.avatar:hover {
+    animation-name: flip_animation;
+    animation-duration: 1.5s;
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: hsla(208, 33%, 21%, 1);
+
+    background: linear-gradient(90deg, hsla(208, 33%, 21%, 1) 0%, hsla(211, 36%, 46%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(208, 33%, 21%, 1) 0%, hsla(211, 36%, 46%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(208, 33%, 21%, 1) 0%, hsla(211, 36%, 46%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#243748", endColorstr="#4b749f", GradientType=1 );
+    color: #d8cefe;
+    border-bottom: 8px solid #cbc0d3;
+    border-right: 6px solid #d8cefe;
+}
+
+.border-blue {
+    border: 1px dotted blue;
+}
+
+@keyframes flip_animation {
+  from {transform: rotateY(0deg);}
+  to {transform: rotateY(360deg);}
+}
+/*
+Final challenge:
+Download the code to your local computer and place it
+in a folder called "business-card"
+*/
